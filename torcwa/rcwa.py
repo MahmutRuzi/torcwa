@@ -7,7 +7,8 @@ class rcwa:
     # Simulation setting
     def __init__(self,freq,order,L,*,
             dtype=torch.complex64,
-            device=torch.device('cuda' if torch.cuda.is_available() else 'cpu'),
+            #device=torch.device('cuda' if torch.cuda.is_available() else 'cpu'),
+            device=torch.device()
             stable_eig_grad=True,
             avoid_Pinv_instability=False,
             max_Pinv_instability=0.005
