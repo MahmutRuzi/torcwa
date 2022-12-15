@@ -9,7 +9,7 @@ class rcwa_geo:
     ny = 100                # y-axis sampling number 
     dtype = torch.float32
     #device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
+    devie = torch.device
     def __init__(self):
         pass
     
